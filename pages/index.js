@@ -3,6 +3,13 @@ import Head from 'next/head'
 import Nav from '../components/nav'
 import Back from '../components/background'
 import Footer from '../components/footer'
+import Service from '../components/services'
+import Contact from '../components/contact'
+import Customers from '../components/customer'
+import About from '../components/about'
+import Statistics from '../components/static'
+import Work from '../components/work'
+import Cust from '../components/cust'
 
 const Home = () => (
   <div>
@@ -38,6 +45,14 @@ const Home = () => (
 
     <Nav />
     <Back />
+    <About />
+    <Service />
+    <Customers />
+    <Statistics />
+    <Work />
+    <Cust />
+    <Contact />
+    <div id="map"></div>
     <Footer />
 
    
