@@ -20,7 +20,6 @@ const Nav = () => (
           <li className="nav-item"><a href="#intro" className="nav-link link-scroll">Intro</a></li>
           <li className="nav-item"><a href="#about" className="nav-link link-scroll">About</a></li>
           <li className="nav-item"><a href="#services" className="nav-link link-scroll">Services</a></li>
-          <li className="nav-item"><a href="#testimonials" className="nav-link link-scroll">Testimonials</a></li>
           <li className="nav-item"><a href="#references" className="nav-link link-scroll">My work</a></li>
           <li className="nav-item"><a href="#customers" className="nav-link link-scroll">Clients</a></li>
           <li className="nav-item"><a href="#contact" className="nav-link link-scroll">Contact</a></li>

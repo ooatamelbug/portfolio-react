@@ -1,8 +1,9 @@
 import react from 'react';
 import Link from 'next/link'
+import fetch from 'isomorphic-unfetch'
 
 
-const Cust = () => (
+const Cust = ({stars}) => (
     <section id="customers" className="customers-section bg-gray">
     <div className="container">
       <div className="col-md-12">
@@ -31,5 +32,8 @@ const Cust = () => (
   </section>
   
 )
-
+Cust.getInitialProps = async ({ req }) => {
+  const res = await fetch('http://localhost:8000/api/language/')
+  return { stars: res.data }
+}
 export default Cust;

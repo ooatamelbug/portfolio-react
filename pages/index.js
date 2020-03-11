@@ -10,6 +10,8 @@ import About from '../components/about'
 import Statistics from '../components/static'
 import Work from '../components/work'
 import Cust from '../components/cust'
+//import 'bootstrap/dist/css/bootstrap.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => (
   <div>
@@ -21,6 +23,7 @@ const Home = () => (
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <meta name="robots" content="all,follow"/>
       {/* <!-- Bootstrap CSS--> */}
+    
       <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css"/>
       {/* <!-- Font Awesome CSS--> */}
       <link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.min.css"/>
@@ -38,17 +41,23 @@ const Home = () => (
       {/* <!-- Leaflet CSS - For the map--> */}
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css"/>
       {/* <!-- Favicon--> */}
+        <link
+          rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+        />
+
       <link rel="shortcut icon" href="/static/img/favicon.png" importance='low'/>
-      {/* <title>Home</title> */}
-      {/* <link rel='icon' href='/static/favicon.ico' importance='low' /> */}
+      <link rel='icon' href='/static/favicon.ico' importance='low' />
     </Head>
 
     <Nav />
     <Back />
     <About />
     <Service />
-    <Customers />
-    <Statistics />
+    {/*<Customers />
+    <Statistics />*/}
     <Work />
     <Cust />
     <Contact />
@@ -56,7 +65,7 @@ const Home = () => (
     <Footer />
 
    
-    {/* <style jsx>{` 
+     <style jsx>{` 
       .hero {
         width: 100%;
         color: #333;
@@ -101,7 +110,7 @@ const Home = () => (
         font-size: 13px;
         color: #333;
       }
-     `}</style> */}
+     `}</style>
      <script src="/static/vendor/jquery/jquery.min.js"></script>
     <script src="/static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/static/vendor/jquery.cookie/jquery.cookie.js"> </script>
@@ -109,6 +118,7 @@ const Home = () => (
     <script src="/static/vendor/waypoints/lib/jquery.waypoints.min.js"></script>
     <script src="/static/vendor/jquery.counterup/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+
     <script src="/static/js/front.js"></script>
   </div>
 )

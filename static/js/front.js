@@ -1,5 +1,12 @@
 $(function () {
-
+    $('.modelcust').on('click',function(){
+        var id = '#'+$(this).atrr('data-target');
+        alert(id);
+        console.log(id);
+        $(`${id}`).addClass('visibel');
+        $(`${id}`).removeClass('notvis');
+    })
+    
     /* =========================================
      * tooltip
      *  =======================================*/
@@ -196,6 +203,7 @@ $(function () {
     }, {
         offset: '90%'
     });
+    
     
     $('[data-animate-hover]').hover(function () {
         $(this).css({
